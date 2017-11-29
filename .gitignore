@@ -19,5 +19,5 @@
 *
 !*/
 !/.gitignore
-!/src/main/webapp/WEB-INF/views/modules/co/*
+!/src/main/webapp/WEB-INF/views/modules/**
 !/src/main/webapp/WEB-INF/views/include/*
