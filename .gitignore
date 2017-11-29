@@ -1,0 +1,23 @@
+.mymetadata
+.checkstyle
+.classpath
+.project
+.class
+.war
+.zip
+.rar
+.idea
+*.iml
+.settings/*
+/indexes/*
+/target/*
+/src/main/webapp/WEB-INF/classes/*
+/src/main/webapp/userfiles/*
+/target/
+
+# maintained by Sine for self develop
+*
+!*/
+!/.gitignore
+!/src/main/webapp/WEB-INF/views/modules/co/*
+!/src/main/webapp/WEB-INF/views/include/*
