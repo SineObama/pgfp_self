@@ -60,7 +60,7 @@
 	</div>
 	<div class="content tabs f-clear">
 		<ul class="content-nav">
-			<li class="active">贫困学生劝返情况记录</li>
+			<li class="active"><a>贫困学生劝返情况记录</a></li>
 			<li><a href="${ctx}">辍学劝返工作情况说明书</a></li>
 			<li style="height:38px;"><a href="${ctx}">因失能、缓学、休学<br/>贫困户学生情况记录表</a></li>
 		</ul>

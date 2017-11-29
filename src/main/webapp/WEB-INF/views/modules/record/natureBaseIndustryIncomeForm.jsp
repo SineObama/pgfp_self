@@ -42,7 +42,7 @@
 	    <ul class="content-nav">
 	        <li><a href="${ctx}/record/natureBaseCountryBasic/form?id=${industryIncome.countryBasicId}">基本情况</a></li>
 	        <li><a href="${ctx}/record/natureBaseDevIncome/form?countryBasicId=${industryIncome.countryBasicId}">收入状况</a></li>
-	        <li class="active">产业状况</li>
+	        <li class="active"><a>产业状况</a></li>
 	        <li><a href="${ctx}/record/infrastructureSituation/form?countryBasicId=${industryIncome.countryBasicId}">基础设施状况</a></li>
 	        <li><a href="${ctx}/record/demandAndSituation/formD?countryBasicId=${industryIncome.countryBasicId}">帮扶需求及帮扶情况</a></li>
         	<li><a href="${ctx}/record/tableInfo/formD?countryBasicId=${industryIncome.countryBasicId}">填表信息</a></li>

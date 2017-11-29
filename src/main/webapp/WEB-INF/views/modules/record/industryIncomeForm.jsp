@@ -73,7 +73,7 @@
 		<li><a href="${ctx}/record/rainPlan/form?countryBasicId=${industryIncome.countryBasicId}">雨露计划</a></li>
 		<li><a href="${ctx}/record/microfinance/form?countryBasicId=${industryIncome.countryBasicId}">扶贫小额信贷</a></li>
 		<li><a href="${ctx}/record/povertyRelocation/form?countryBasicId=${industryIncome.countryBasicId}">异地扶贫搬迁</a></li>
-		<li class="active">特色产业增收</li>
+		<li class="active"><a>特色产业增收</a></li>
 		<li><a href="${ctx}/record/workForceOffice/form?countryBasicId=${industryIncome.countryBasicId}">驻村单位</a></li>
 		<li><a href="${ctx}/record/cadreCountryInfo/form?countryId=${industryIncome.countryBasicId}">驻村干部</a></li>
 		<li><a href="${ctx}/record/demandAndSituation/form?countryBasicId=${industryIncome.countryBasicId}">帮扶需求及帮扶情况</a></li>

@@ -54,7 +54,7 @@
 		<li><a href="${ctx}/record/countryPower/form?countryBasicId=${healthStatus.countryBasicId}">农村电力保障</a></li>
 		<li><a href="${ctx}/record/countryHouse/form?countryBasicId=${healthStatus.countryBasicId}">住房情况</a></li>
 		<li><a href="${ctx}/record/sociologyEnsure/form?countryBasicId=${healthStatus.countryBasicId}">社会保障</a></li>
-		<li class="active">卫生状况</li>
+		<li class="active"><a>卫生状况</a></li>
 		<li><a href="${ctx}/record/cultureBuild/form?countryBasicId=${healthStatus.countryBasicId}">文化建设</a></li>
 		<li><a href="${ctx}/record/villageInfo/form?countryBasicId=${healthStatus.countryBasicId}">贫困村信息化</a></li>
 		<li><a href="${ctx}/record/rainPlan/form?countryBasicId=${healthStatus.countryBasicId}">雨露计划</a></li>

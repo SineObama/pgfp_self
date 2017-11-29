@@ -53,7 +53,7 @@
 	        <li><a href="${ctx}/county/baseCountySpecialPovertyInfo/form?baseCountyInfoId=${info.id}&type=1">雨露计划</a></li>
 	        <li><a href="${ctx}/county/microdinanceProvertyAlleviation/form?baseCountyInfoId=${info.id}&type=2">扶贫小额信贷</a></li>
 	        <li><a href="${ctx}/county/offSiteRelocation/form?baseCountyInfoId=${info.id}&type=3">异地扶贫搬迁</a></li>
-	        <li class="active">帮扶单位及责任人情况</li>
+	        <li class="active"><a>帮扶单位及责任人情况</a></li>
 	        <li><a href="${ctx}/county/baseCountyHelpInfo/form?baseCountyInfoId=${info.id}">帮扶情况</a></li>
 		</ul>
 		<div id="tab-15" class="content-detail">

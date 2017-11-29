@@ -44,7 +44,7 @@
 </div>
 <div class="content tabs f-clear">
 	<ul class="content-nav">
-		<li class="active">信息概览</li>
+		<li class="active"><a>信息概览</a></li>
 		<li><a href="${ctx}/bf/ImmigrationTracking/training?roomId=${tracking.roomId}">移民后期受训情况</a></li>
 		<li><a href="${ctx}/bf/ImmigrationTracking/work?roomId=${tracking.roomId}">移民后期就业情况</a></li>
 	</ul>

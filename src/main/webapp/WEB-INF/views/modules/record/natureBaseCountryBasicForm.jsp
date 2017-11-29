@@ -39,7 +39,7 @@
 	</ul><br/>
 <div class="content tabs f-clear">
     <ul class="content-nav">
-        <li class="active">基本情况</li>
+        <li class="active"><a>基本情况</a></li>
         <li><a href="${ctx}/record/natureBaseDevIncome/form?countryBasicId=${countryBasic.id}">收入状况</a></li>
         <li><a href="${ctx}/record/natureBaseIndustryIncome/form?countryBasicId=${countryBasic.id}">产业状况</a></li>
         <li><a href="${ctx}/record/infrastructureSituation/form?countryBasicId=${countryBasic.id}">基础设施状况</a></li>

@@ -75,7 +75,7 @@
 	<sys:message content="${message}"/>
 	<div class="content tabs f-clear">
 		<ul class="content-nav">
-			<li class="active">（一）吃穿不愁</li>
+			<li class="active"><a>（一）吃穿不愁</a></li>
 			<li>
 				<a href="${ctx}/report/houseGuarantee/form?regcardId=${foodAndClothing.regcardId}">（二）住房保障</a>
 			</li>

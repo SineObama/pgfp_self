@@ -51,7 +51,7 @@
 			<li><a href="${ctx}/record/basePoorerHelpDetail/form?poorerRegCardId=${basePoorerRegCard.id}">帮扶需求</a></li>
 			<li><a href="${ctx}/record/basePoorerSupportUnitInfo/form?poorerRegCardId=${basePoorerRegCard.id}">帮扶单位及责任人</a></li>
 			<li><a href="${ctx}/record/basePoorerStudentHelpInfo/form?poorerRegCardId=${basePoorerRegCard.id}">家庭在校生受帮扶情况</a></li>
-			<li class="active">填表记录</li>
+			<li class="active"><a>填表记录</a></li>
 		</ul>
 		<div id="tab-1" class="content-detail">
 	<form:form id="inputForm" modelAttribute="basePoorerRegCard" action="${ctx}/record/basePoorerRegCard/save" method="post" class="form-horizontal">

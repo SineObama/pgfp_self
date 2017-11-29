@@ -44,7 +44,7 @@
 	<div class="content tabs f-clear">
 		<ul class="content-nav">
 			<li><a href="${ctx}/record/basePoorerRegCard/form?id=${card.id}">基本情况</a></li>
-			<li class="active">家庭成员</li>
+			<li class="active"><a>家庭成员</a></li>
 			<li><a href="${ctx}/record/baseMemberTrainingStatus/form?cardId=${card.id}">家庭成员受培训情况</a></li>
 			<li><a href="${ctx}/record/baseMemberWorkStatus/form?cardId=${card.id}">家庭成员就业情况</a> </li>
 			<li><a href="${ctx}/bf/insuredSituation/form?poorerRegCardId=${card.id}">家庭成员参保情况</a></li>

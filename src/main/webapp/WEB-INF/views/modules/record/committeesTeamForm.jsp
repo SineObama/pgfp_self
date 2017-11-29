@@ -56,7 +56,7 @@
 		<li><a href="${ctx}/record/demandAndSituation/form?countryBasicId=${committeesTeam.countryBasicId}">帮扶需求及帮扶情况</a></li>
 		<li><a href="${ctx}/record/tableInfo/form?countryBasicId=${committeesTeam.countryBasicId}">填表信息</a></li>
 		<li><a href="${ctx}/record/basicPublicService/form?countryBasicId=${committeesTeam.countryBasicId}">基本公共服务</a></li>
-		<li class="active">两委班子情况</li>
+		<li class="active"><a>两委班子情况</a></li>
 	</ul>
 	<div id="tab-2" class="content-detail">
 		<c:choose>

@@ -35,7 +35,7 @@
 	</ul><br/>
 	<div class="content tabs f-clear">
 		<ul class="content-nav">
-			<li class="active">基本情况</li>
+			<li class="active"><a>基本情况</a></li>
 			<li><a href="${ctx}/migration/relocationPlanSituation/form?countryMigrateId=${countryMigrate.id}">移民搬迁情况</a></li>
 			<li><a href="${ctx}/migration/bNaturalVillageRelocationPlan/form?countryMigrateId=${countryMigrate.id}">移民搬迁规划</a></li>
 			<li><a href="${ctx}/migration/bRelocationFinishStatus/form?countryMigrateId=${countryMigrate.id}">任务完成情况</a></li>

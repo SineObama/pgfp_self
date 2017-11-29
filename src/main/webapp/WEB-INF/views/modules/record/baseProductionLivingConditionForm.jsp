@@ -47,7 +47,7 @@
 			<li><a href="${ctx}/record/baseMemberTrainingStatus/form?cardId=${condition.poorerRegCardId}">家庭成员受培训情况</a></li>
 			<li><a href="${ctx}/record/baseMemberWorkStatus/form?cardId=${condition.poorerRegCardId}">家庭成员就业情况</a> </li>
 			<li><a href="${ctx}/bf/insuredSituation/form?poorerRegCardId=${condition.poorerRegCardId}">家庭成员参保情况</a></li>
-			<li class="active">生产生活条件</li>
+			<li class="active"><a>生产生活条件</a></li>
 			<li><a href="${ctx}/record/baseFamilyEconomicInfo/form?poorerRegCardId=${condition.poorerRegCardId}">家庭经济情况</a></li>
 			<li><a href="${ctx}/record/baseRegCardBiz/form?regCardId=${condition.poorerRegCardId}">特色产业增收</a></li>
 			<li><a href="${ctx}/record/basePoorerHelpDetail/form?poorerRegCardId=${condition.poorerRegCardId}">帮扶需求</a></li>

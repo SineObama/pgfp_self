@@ -52,7 +52,7 @@
 		<li><a href="${ctx}/record/microfinance/form?countryBasicId=${countryBasic.id}">扶贫小额信贷</a></li>
 		<li><a href="${ctx}/record/povertyRelocation/form?countryBasicId=${countryBasic.id}">异地扶贫搬迁</a></li>
 		<li><a href="${ctx}/record/industryIncome/form?countryBasicId=${countryBasic.id}">特色产业增收</a></li>
-		<li class="active">驻村单位</li>
+		<li class="active"><a>驻村单位</a></li>
 		<li><a href="${ctx}/record/cadreCountryInfo/form?countryId=${countryBasic.id}">驻村干部</a></li>
 		<li><a href="${ctx}/record/demandAndSituation/form?countryBasicId=${countryBasic.id}">帮扶需求及帮扶情况</a></li>
 		<li><a href="${ctx}/record/tableInfo/form?countryBasicId=${countryBasic.id}">填表信息</a></li>

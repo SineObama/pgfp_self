@@ -60,7 +60,7 @@
 		<li><a href="${ctx}/record/countryHouse/form?countryBasicId=${cultureBuild.countryBasicId}">住房情况</a></li>
 		<li><a href="${ctx}/record/sociologyEnsure/form?countryBasicId=${cultureBuild.countryBasicId}">社会保障</a></li>
 		<li><a href="${ctx}/record/healthStatus/form?countryBasicId=${cultureBuild.countryBasicId}">卫生状况</a></li>
-		<li class="active">文化建设</li>
+		<li class="active"><a>文化建设</a></li>
 		<li><a href="${ctx}/record/villageInfo/form?countryBasicId=${cultureBuild.countryBasicId}">贫困村信息化</a></li>
 		<li><a href="${ctx}/record/rainPlan/form?countryBasicId=${cultureBuild.countryBasicId}">雨露计划</a></li>
 		<li><a href="${ctx}/record/microfinance/form?countryBasicId=${cultureBuild.countryBasicId}">扶贫小额信贷</a></li>

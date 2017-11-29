@@ -52,7 +52,7 @@
 	        <li><a href="${ctx}/county/baseCountyInformation/form?baseCountyInfoId=${baseCountySpecialPovertyInfo.baseCountyInfoId}&type=10">贫困村信息化</a></li>
 	        <li><a href="${ctx}/county/baseCountySpecialPovertyInfo/form?baseCountyInfoId=${baseCountySpecialPovertyInfo.baseCountyInfoId}&type=1">雨露计划</a></li>
 	        <li><a href="${ctx}/county/microdinanceProvertyAlleviation/form?baseCountyInfoId=${baseCountySpecialPovertyInfo.baseCountyInfoId}&type=2">扶贫小额信贷</a></li>
-	        <li class="active">异地扶贫搬迁</li>
+	        <li class="active"><a>异地扶贫搬迁</a></li>
 	        <li><a href="${ctx}/county/bCountyHelpUnitInfo/form?baseCountyInfoId=${baseCountySpecialPovertyInfo.baseCountyInfoId}">帮扶单位及责任人情况</a></li>
 	        <li><a href="${ctx}/county/baseCountyHelpInfo/form?baseCountyInfoId=${baseCountySpecialPovertyInfo.baseCountyInfoId}">帮扶情况</a></li>
 		</ul>

@@ -37,7 +37,7 @@
 	</ul><br/>
 <div class="content tabs f-clear">
 	<ul class="content-nav">
-		<li class="active">村名与年度</li>
+		<li class="active"><a>村名与年度</a></li>
 		<li><a href="${ctx}/co/coCharacterIndustry/form?coMain.coId=${coCountryYear.id}&coMain.type=1">特色产业情况统计表</a></li>
 		<li><a href="${ctx}/co/coPoorHouIndustry/form?coMain.coId=${coCountryYear.id}&coMain.type=2">贫困户产业登记表</a></li>
 		<li><a href="${ctx}/co/coLaborOut/form?coId=${coCountryYear.id}&countryId=${coCountryYear.area.id}">贫困户劳动力统计表</a></li>

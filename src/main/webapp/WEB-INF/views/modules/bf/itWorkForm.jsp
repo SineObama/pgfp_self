@@ -20,7 +20,7 @@
 	<ul class="content-nav">
 		<li><a href="${ctx}/bf/ImmigrationTracking/form?roomId=${tracking.roomId}">信息概览</a></li>
 		<li><a href="${ctx}/bf/ImmigrationTracking/training?roomId=${tracking.roomId}">移民后期培训情况</a></li>
-		<li class="active">移民后期就业情况</li>
+		<li class="active"><a>移民后期就业情况</a></li>
 	</ul>
 	<div id="tab-1" class="content-detail">
 

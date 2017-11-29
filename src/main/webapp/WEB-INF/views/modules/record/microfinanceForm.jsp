@@ -62,7 +62,7 @@
 		<li><a href="${ctx}/record/cultureBuild/form?countryBasicId=${microfinance.countryBasicId}">文化建设</a></li>
 		<li><a href="${ctx}/record/villageInfo/form?countryBasicId=${microfinance.countryBasicId}">贫困村信息化</a></li>
 		<li><a href="${ctx}/record/rainPlan/form?countryBasicId=${microfinance.countryBasicId}">雨露计划</a></li>
-		<li class="active">扶贫小额信贷</li>
+		<li class="active"><a>扶贫小额信贷</a></li>
 		<li><a href="${ctx}/record/povertyRelocation/form?countryBasicId=${microfinance.countryBasicId}">异地扶贫搬迁</a></li>
 		<li><a href="${ctx}/record/industryIncome/form?countryBasicId=${microfinance.countryBasicId}">特色产业增收</a></li>
 		<li><a href="${ctx}/record/workForceOffice/form?countryBasicId=${microfinance.countryBasicId}">驻村单位</a></li>
