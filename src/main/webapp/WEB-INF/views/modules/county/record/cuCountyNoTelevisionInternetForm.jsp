@@ -72,7 +72,7 @@
                            value="2"/>
              填报单位：<input class="underline departmentName required" readonly="true" name="department.name"
                          value="平桂"
-                         style="width: 80px" maxlength="20"/>县（市、区）人力资源社会保障局（盖章）
+                         style="width: 80px" maxlength="20"/>县(市、区）公共服务专责小组（盖章）
                 </span>
                 <span style="float: right">填报时间：<input name="time" id="time" type="text" maxlength="20"
                                                        class="input-medium Wdate required"
