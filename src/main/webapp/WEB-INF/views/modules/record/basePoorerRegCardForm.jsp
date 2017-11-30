@@ -42,7 +42,7 @@
 </div>
 <div class="content tabs f-clear">
 	<ul class="content-nav">
-		<li class="active"><a>基本情况</a></li>
+		<li class="active">基本情况</li>
 		<li><a href="${ctx}/record/basePoorerFamilyMember/form?poorerRegCardId=${basePoorerRegCard.id}">家庭成员</a></li>
 		<li><a href="${ctx}/record/baseMemberTrainingStatus/form?cardId=${basePoorerRegCard.id}">家庭成员受培训情况</a></li>
 		<li><a href="${ctx}/record/baseMemberWorkStatus/form?cardId=${basePoorerRegCard.id}">家庭成员就业情况</a> </li>

@@ -42,7 +42,7 @@
 		<li><a href="${ctx}/migration/relocationPlanSituation/form?countryMigrateId=${tableInfo.countryMigrateId}">移民搬迁情况</a></li>
 		<li><a href="${ctx}/migration/bNaturalVillageRelocationPlan/form?countryMigrateId=${tableInfo.countryMigrateId}">移民搬迁规划</a></li>
 		<li><a href="${ctx}/migration/bRelocationFinishStatus/form?countryMigrateId=${tableInfo.countryMigrateId}">任务完成情况</a></li>
-		<li class="active"><a>填表</a></li>
+		<li class="active">填表</li>
 	</ul>
 	<div id="tab-5" class="content-detail">
 		<c:choose>

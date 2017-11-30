@@ -41,7 +41,7 @@
 	<ul class="content-nav">
 		<li><a href="${ctx}/record/countryBasic/form?id=${roadConditon.countryBasicId}">基本情况</a></li>
 		<li><a href="${ctx}/record/devIncome/form?countryBasicId=${roadConditon.countryBasicId}">收入状况</a></li>
-		<li class="active"><a>村级道路情况</a></li>
+		<li class="active">村级道路情况</li>
 		<li><a href="${ctx}/record/drinkWater/form?countryBasicId=${roadConditon.countryBasicId}">饮水情况</a></li>
 		<li><a href="${ctx}/record/countryPower/form?countryBasicId=${roadConditon.countryBasicId}">农村电力保障</a></li>
 		<li><a href="${ctx}/record/countryHouse/form?countryBasicId=${roadConditon.countryBasicId}">住房情况</a></li>

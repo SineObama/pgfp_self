@@ -57,7 +57,7 @@
 		<li><a href="${ctx}/record/workForceOffice/form?countryBasicId=${tableInfo.countryBasicId}">驻村单位</a></li>
 		<li><a href="${ctx}/record/cadreCountryInfo/form?countryId=${tableInfo.countryBasicId}">驻村干部</a></li>
 		<li><a href="${ctx}/record/demandAndSituation/form?countryBasicId=${tableInfo.countryBasicId}">帮扶需求及帮扶情况</a></li>
-		<li class="active"><a>填表信息</a></li>
+		<li class="active">填表信息</li>
 		<li><a href="${ctx}/record/basicPublicService/form?countryBasicId=${tableInfo.countryBasicId}">基本公共服务</a></li>
 		<li><a href="${ctx}/record/committeesTeam/form?countryBasicId=${tableInfo.countryBasicId}">两委班子情况</a></li>
 	</ul>
