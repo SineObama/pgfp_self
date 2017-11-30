@@ -61,7 +61,7 @@
 		<li><a href="${ctx}/record/healthStatus/form?countryBasicId=${rainPlan.countryBasicId}">卫生状况</a></li>
 		<li><a href="${ctx}/record/cultureBuild/form?countryBasicId=${rainPlan.countryBasicId}">文化建设</a></li>
 		<li><a href="${ctx}/record/villageInfo/form?countryBasicId=${rainPlan.countryBasicId}">贫困村信息化</a></li>
-		<li class="active"><a>雨露计划</a></li>
+		<li class="active">雨露计划</li>
 		<li><a href="${ctx}/record/microfinance/form?countryBasicId=${rainPlan.countryBasicId}">扶贫小额信贷</a></li>
 		<li><a href="${ctx}/record/povertyRelocation/form?countryBasicId=${rainPlan.countryBasicId}">异地扶贫搬迁</a></li>
 		<li><a href="${ctx}/record/industryIncome/form?countryBasicId=${rainPlan.countryBasicId}">特色产业增收</a></li>

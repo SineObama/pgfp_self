@@ -56,7 +56,7 @@
 		<li><a href="${ctx}/record/drinkWater/form?countryBasicId=${sociologyEnsure.countryBasicId}">饮水情况</a></li>
 		<li><a href="${ctx}/record/countryPower/form?countryBasicId=${sociologyEnsure.countryBasicId}">农村电力保障</a></li>
 		<li><a href="${ctx}/record/countryHouse/form?countryBasicId=${sociologyEnsure.countryBasicId}">住房情况</a></li>
-		<li class="active"><a>社会保障</a></li>
+		<li class="active">社会保障</li>
 		<li><a href="${ctx}/record/healthStatus/form?countryBasicId=${sociologyEnsure.countryBasicId}">卫生状况</a></li>
 		<li><a href="${ctx}/record/cultureBuild/form?countryBasicId=${sociologyEnsure.countryBasicId}">文化建设</a></li>
 		<li><a href="${ctx}/record/villageInfo/form?countryBasicId=${sociologyEnsure.countryBasicId}">贫困村信息化</a></li>

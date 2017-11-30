@@ -54,7 +54,7 @@
 		<li><a href="${ctx}/record/industryIncome/form?countryBasicId=${countryBasic.id}">特色产业增收</a></li>
 		<li><a href="${ctx}/record/workForceOffice/form?countryBasicId=${countryBasic.id}">驻村单位</a></li>
 		<li><a href="${ctx}/record/cadreCountryInfo/form?countryId=${countryBasic.id}">驻村干部</a></li>
-		<li class="active"><a>帮扶需求及帮扶情况</a></li>
+		<li class="active">帮扶需求及帮扶情况</li>
 		<li><a href="${ctx}/record/tableInfo/form?countryBasicId=${countryBasic.id}">填表信息</a></li>
 		<li><a href="${ctx}/record/basicPublicService/form?countryBasicId=${countryBasic.id}">基本公共服务</a></li>
 		<li><a href="${ctx}/record/committeesTeam/form?countryBasicId=${countryBasic.id}">两委班子情况</a></li>

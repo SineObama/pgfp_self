@@ -45,7 +45,7 @@
 		<li><a href="${ctx}/record/natureBaseIndustryIncome/form?countryBasicId=${tableInfo.countryBasicId}">产业状况</a></li>
 		<li><a href="${ctx}/record/infrastructureSituation/form?countryBasicId=${tableInfo.countryBasicId}">基础设施状况</a></li>
 		<li><a href="${ctx}/record/demandAndSituation/formD?countryBasicId=${tableInfo.countryBasicId}">帮扶需求及帮扶情况</a></li>
-		<li class="active"><a>填表信息</a></li>
+		<li class="active">填表信息</li>
 	</ul>
 	<div id="tab-17" class="content-detail">
 		<c:choose>

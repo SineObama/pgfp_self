@@ -150,7 +150,7 @@
 		<li><a href="${ctx}/migration/countryMigrate/form?id=${bRelocationFinishStatus.countryMigrateId}">基本情况</a></li>
 		<li><a href="${ctx}/migration/relocationPlanSituation/form?countryMigrateId=${bRelocationFinishStatus.countryMigrateId}">移民搬迁情况</a></li>
 		<li><a href="${ctx}/migration/bNaturalVillageRelocationPlan/form?countryMigrateId=${bRelocationFinishStatus.countryMigrateId}">移民搬迁规划</a></li>
-		<li class="active"><a>任务完成情况</a></li>
+		<li class="active">任务完成情况</li>
 		<li><a href="${ctx}/migration/table/form?countryMigrateId=${bRelocationFinishStatus.countryMigrateId}">填表</a></li>
 	</ul>
 	<div id="tab-4" class="content-detail">

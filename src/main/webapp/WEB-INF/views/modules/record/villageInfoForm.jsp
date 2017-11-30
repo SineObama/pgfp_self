@@ -56,7 +56,7 @@
 		<li><a href="${ctx}/record/sociologyEnsure/form?countryBasicId=${villageInfo.countryBasicId}">社会保障</a></li>
 		<li><a href="${ctx}/record/healthStatus/form?countryBasicId=${villageInfo.countryBasicId}">卫生状况</a></li>
 		<li><a href="${ctx}/record/cultureBuild/form?countryBasicId=${villageInfo.countryBasicId}">文化建设</a></li>
-		<li class="active"><a>贫困村信息化</a></li>
+		<li class="active">贫困村信息化</li>
 		<li><a href="${ctx}/record/rainPlan/form?countryBasicId=${villageInfo.countryBasicId}">雨露计划</a></li>
 		<li><a href="${ctx}/record/microfinance/form?countryBasicId=${villageInfo.countryBasicId}">扶贫小额信贷</a></li>
 		<li><a href="${ctx}/record/povertyRelocation/form?countryBasicId=${villageInfo.countryBasicId}">异地扶贫搬迁</a></li>

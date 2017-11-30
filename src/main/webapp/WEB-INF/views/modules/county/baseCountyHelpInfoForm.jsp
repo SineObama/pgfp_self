@@ -54,7 +54,7 @@
         <li><a href="${ctx}/county/microdinanceProvertyAlleviation/form?baseCountyInfoId=${baseCountyHelpInfo.baseCountyInfoId}&type=2">扶贫小额信贷</a></li>
         <li><a href="${ctx}/county/offSiteRelocation/form?baseCountyInfoId=${baseCountyHelpInfo.baseCountyInfoId}&type=3">异地扶贫搬迁</a></li>
         <li><a href="${ctx}/county/bCountyHelpUnitInfo/form?baseCountyInfoId=${baseCountyHelpInfo.baseCountyInfoId}">帮扶单位及责任人情况</a></li>
-        <li class="active"><a>帮扶情况</a></li>
+        <li class="active">帮扶情况</li>
     </ul>
     <div id="tab-1" class="content-detail">
 	

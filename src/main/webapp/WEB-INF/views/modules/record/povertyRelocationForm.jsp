@@ -64,7 +64,7 @@
 		<li><a href="${ctx}/record/villageInfo/form?countryBasicId=${povertyRelocation.countryBasicId}">贫困村信息化</a></li>
 		<li><a href="${ctx}/record/rainPlan/form?countryBasicId=${povertyRelocation.countryBasicId}">雨露计划</a></li>
 		<li><a href="${ctx}/record/microfinance/form?countryBasicId=${povertyRelocation.countryBasicId}">扶贫小额信贷</a></li>
-		<li class="active"><a>易地扶贫搬迁</a></li>
+		<li class="active">易地扶贫搬迁</li>
 		<li><a href="${ctx}/record/industryIncome/form?countryBasicId=${povertyRelocation.countryBasicId}">特色产业增收</a></li>
 		<li><a href="${ctx}/record/workForceOffice/form?countryBasicId=${povertyRelocation.countryBasicId}">驻村单位</a></li>
 		<li><a href="${ctx}/record/cadreCountryInfo/form?countryId=${povertyRelocation.countryBasicId}">驻村干部</a></li>

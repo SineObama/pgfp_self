@@ -38,7 +38,7 @@
 	
 	<div class="content tabs f-clear">
     <ul class="content-nav">
-        <li class="active"><a>基本情况</a></li>
+        <li class="active">基本情况</li>
         <li><a href="${ctx}/county/baseCountyKeyWorkInfo/form?baseCountyInfoId=${baseCountyInfo.id}&type=1">村级道路畅通</a></li>
         <li><a href="${ctx}/county/baseCountyDrinkSafe/form?baseCountyInfoId=${baseCountyInfo.id}&type=2">饮水安全</a></li>
         <li><a href="${ctx}/county/baseCountyPowerSupport/form?baseCountyInfoId=${baseCountyInfo.id}&type=3">农村电力保障</a></li>

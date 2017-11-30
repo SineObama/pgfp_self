@@ -37,7 +37,7 @@
 </ul><br/>
 <div class="content tabs f-clear">
 	<ul class="content-nav">
-		<li class="active"><a>基本情况</a></li>
+		<li class="active">基本情况</li>
 		<li><a href="${ctx}/record/devIncome/form?countryBasicId=${countryBasic.id}">收入状况</a></li>
 		<li><a href="${ctx}/record/roadConditon/form?countryBasicId=${countryBasic.id}">村级道路情况</a></li>
 		<li><a href="${ctx}/record/drinkWater/form?countryBasicId=${countryBasic.id}">饮水情况</a></li>

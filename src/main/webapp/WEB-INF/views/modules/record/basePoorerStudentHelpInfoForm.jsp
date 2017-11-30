@@ -53,7 +53,7 @@
 			<li><a href="${ctx}/record/baseRegCardBiz/form?regCardId=${card.id}">特色产业增收</a></li>
 			<li><a href="${ctx}/record/basePoorerHelpDetail/form?poorerRegCardId=${card.id}">帮扶需求</a></li>
 			<li><a href="${ctx}/record/basePoorerSupportUnitInfo/form?poorerRegCardId=${card.id}">帮扶单位及责任人</a></li>
-			<li class="active"><a>家庭在校生受帮扶情况</a></li>
+			<li class="active">家庭在校生受帮扶情况</li>
 			<li><a href="${ctx}/record/basePoorerRegCard/tpPlan?id=${card.id}">填表记录</a></li>
 		</ul>
 		<div id="tab-15" class="content-detail">

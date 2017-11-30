@@ -40,7 +40,7 @@
 	<ul class="content-nav">
 		<li><a href="${ctx}/migration/countryMigrate/form?id=${bNaturalVillageRelocationPlan.countryMigrateId}">基本情况</a></li>
 		<li><a href="${ctx}/migration/relocationPlanSituation/form?countryMigrateId=${bNaturalVillageRelocationPlan.countryMigrateId}">移民搬迁情况</a></li>
-		<li class="active"><a>移民搬迁规划</a></li>
+		<li class="active">移民搬迁规划</li>
 		<li><a href="${ctx}/migration/bRelocationFinishStatus/form?countryMigrateId=${bNaturalVillageRelocationPlan.countryMigrateId}">任务完成情况</a></li>
 		<li><a href="${ctx}/migration/table/form?countryMigrateId=${bNaturalVillageRelocationPlan.countryMigrateId}">填表</a></li>
 	</ul>

@@ -42,7 +42,7 @@
 		<li><a href="${ctx}/record/devIncome/form?countryBasicId=${countryPower.countryBasicId}">收入状况</a></li>
 		<li><a href="${ctx}/record/roadConditon/form?countryBasicId=${countryPower.countryBasicId}">村级道路情况</a></li>
 		<li><a href="${ctx}/record/drinkWater/form?countryBasicId=${countryPower.countryBasicId}">饮水情况</a></li>
-		<li class="active"><a>农村电力保障</a></li>
+		<li class="active">农村电力保障</li>
 		<li><a href="${ctx}/record/countryHouse/form?countryBasicId=${countryPower.countryBasicId}">住房情况</a></li>
 		<li><a href="${ctx}/record/sociologyEnsure/form?countryBasicId=${countryPower.countryBasicId}">社会保障</a></li>
 		<li><a href="${ctx}/record/healthStatus/form?countryBasicId=${countryPower.countryBasicId}">卫生状况</a></li>
