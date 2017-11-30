@@ -98,7 +98,7 @@
 		<li class="active"><a href="${ctx}/co/coCharacterIndustry/form?coMain.coId=${coMain.coId}&coMain.type=${coMain.type}">村特色产业情况统计表<shiro:hasPermission name="co:coCharacterIndustry:edit">${not empty coCharacterIndustry.id?'修改':'添加'}</shiro:hasPermission><shiro:lacksPermission name="co:coCharacterIndustry:edit">查看</shiro:lacksPermission></a></li>
 	</ul><br/>
 	<div class="content tabs f-clear">
-	<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
+	<%@ include file="navList.jsp"%>
 		<div id="tab-1" class="content-detail">
 		<c:choose>
 			<c:when test="${empty coMain.coId}">

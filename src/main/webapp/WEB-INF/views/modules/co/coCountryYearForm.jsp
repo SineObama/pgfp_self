@@ -36,7 +36,7 @@
 		<li class="active"><a href="${ctx}/co/coCountryYear/form?id=${coCountryYear.id}">行政村档案<shiro:hasPermission name="co:coCountryYear:edit">${not empty coCountryYear.id?'修改':'添加'}</shiro:hasPermission><shiro:lacksPermission name="co:coCountryYear:edit">查看</shiro:lacksPermission></a></li>
 	</ul><br/>
 <div class="content tabs f-clear">
-	<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
+	<%@ include file="navList.jsp"%>
 	<div id="tab-1" class="content-detail">
 	<form:form id="inputForm" modelAttribute="coCountryYear" action="${ctx}/co/coCountryYear/save" method="post" class="form-horizontal">
 		<form:hidden path="id"/>

@@ -100,7 +100,7 @@
 	</ul><br/>
 
 	<div class="content tabs f-clear">
-		<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
+		<%@ include file="navList.jsp"%>
 		<div id="tab-1" class="content-detail">
 			<c:choose>
 			<c:when test="${empty coMain.coId}">

@@ -92,7 +92,7 @@
 	<li class="active"><a href="">劳动力情况统计表<shiro:hasPermission name="co:coLaborOut:edit">${not empty coLaborOut.id?'修改':'添加'}</shiro:hasPermission><shiro:lacksPermission name="co:coLaborOut:edit">查看</shiro:lacksPermission></a></li>
 </ul><br/>
 <div class="content tabs f-clear">
-	<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
+	<%@ include file="navList.jsp"%>
 	<div id="tab-15" class="content-detail">
 		<c:choose>
 			<c:when test="${empty coMain.coId}">
