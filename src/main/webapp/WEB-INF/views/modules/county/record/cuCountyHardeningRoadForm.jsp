@@ -34,13 +34,29 @@
                 $(".content-nav #HardeningRoad").attr("class", "active");
             });
 
+            function isEdit(v) {
+                if(v.attr("checked") == "checked"){
+                    v.val("1");
+                    v.parents('tr').find(".isEdit").each(function () {
+                        $(this).attr("disabled",false);
+                        $(this).parent('td').attr('class',"bg-white");
+                    });
+                }else{
+                    v.parents('tr').find(".isEdit").each(function () {
+                        $(this).attr("disabled",true);
+                        $(this).val("");
+                        $(this).parent('td').attr('class',"");
+                    });
+                }
+            };
+
             $('input:checkbox').each(function () {
                 if ($(this).val() == 1) {
                     $(this).attr('checked', true);
-                    isEdit($(this));
                 } else {
                     $(this).attr('checked', false);
                 }
+                isEdit($(this));
             });
 
             $("tbody").delegate("input:checkbox", 'click', function () {
@@ -48,22 +64,6 @@
             });
         });
 
-
-        function isEdit(v) {
-            if(v.attr("checked") == "checked"){
-                v.val("1");
-                v.parents('tr').find(".isEdit").each(function () {
-                    $(this).attr("disabled",false);
-                    $(this).parent('td').attr('class',"bg-white");
-                });
-            }else{
-                v.parents('tr').find(".isEdit").each(function () {
-                    $(this).attr("disabled",true);
-                    $(this).val("");
-                    $(this).parent('td').attr('class',"");
-                });
-            }
-        };
     </script>
 </head>
 <body>
@@ -166,45 +166,45 @@
                                            name="cuCountyHardeningRoads[${status.index}].hardeningRoad"
                                            value="${county.hardeningRoad}"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="otherRoadName td-input isEdit" style="width: 120px!important;"
                                            name="cuCountyHardeningRoads[${status.index}].otherRoadName"
                                            value="${county.otherRoadName}" maxlength="100"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="reachLocal td-input isEdit"
                                            name="cuCountyHardeningRoads[${status.index}].reachLocal"
                                            value="${county.reachLocal}" maxlength="100"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="roadbedWidth td-input decimal isEdit"
                                            name="cuCountyHardeningRoads[${status.index}].roadbedWidth"
                                            value="${county.roadbedWidth}" maxlength="11"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="roadWidth td-input decimal isEdit"
                                            name="cuCountyHardeningRoads[${status.index}].roadWidth"
                                            value="${county.roadWidth}" maxlength="11"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="mileage td-input decimal isEdit"
                                            name="cuCountyHardeningRoads[${status.index}].mileage"
                                            value="${county.mileage}"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input name="cuCountyHardeningRoads[${status.index}].completionTime"
                                            type="text" maxlength="20"
                                            class="input-medium isEdit"
                                            value="<fmt:formatDate value="${county.completionTime}" pattern="yyyy-MM"/>"
                                            onclick="WdatePicker({dateFmt:'yyyy-MM',isShowClear:false});"
-                                           style="width: 100px;"/>
+                                           style="width: 100px;background-color: inherit!important;"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="site td-input isEdit" style="width: 120px!important;"
                                            name="cuCountyHardeningRoads[${status.index}].site"
                                            value="${county.site}"/>
                                 </td>
-                                <td class="bg-white">
+                                <td>
                                     <input class="length td-input decimal isEdit"
                                            name="cuCountyHardeningRoads[${status.index}].length"
                                            value="${county.length}"/>

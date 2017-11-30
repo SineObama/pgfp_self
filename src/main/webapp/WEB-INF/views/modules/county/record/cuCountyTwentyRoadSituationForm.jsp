@@ -209,10 +209,10 @@
             $('input:checkbox').each(function () {
                 if ($(this).val() === "1") {
                     $(this).attr("checked", true);
-                    isEdit($(this));
                 } else {
                     $(this).attr("checked", false);
                 }
+                isEdit($(this));
             });
         });
         /*********************************** 区域设置关联块********************************************/
@@ -312,22 +312,22 @@
 										   value='${road.gravelRoadAbove}'/>
 								</td>
 									<%--砂石路或硬化路--%>
-								<td class='bg-white'>
+								<td>
 									<input name='cuCountyTwentyRoadSituations[${index}].gravelOrHardeningRoad' class='input_none isEdit'
 										   value='${road.gravelOrHardeningRoad}'/>
 								</td>
 									<%--路面宽（米）--%>
-								<td class='bg-white'>
+								<td>
 									<input name='cuCountyTwentyRoadSituations[${index}].roadWidth' class='input_none decimal isEdit'
 										   value='${road.roadWidth}'/>
 								</td>
 									<%--里程（公路）--%>
-								<td class='bg-white '>
+								<td>
 									<input name='cuCountyTwentyRoadSituations[${index}].mileage' class='input_none decimal isEdit'
 										   value='${road.mileage}'/>
 								</td>
 									<%--建成通车时间--%>
-								<td class='bg-white'>
+								<td>
 									<%--<input name='cuCountyTwentyRoadSituations[${index}].completionTime' class='input_none int'
 										   value='${road.completionTime}'/>--%>
 
@@ -336,12 +336,12 @@
 											   onclick="WdatePicker({dateFmt:'yyyy-MM',isShowClear:true});"/>
 								</td>
 									<%--自然保护区路段地点--%>
-								<td class='bg-white'>
+								<td>
 									<input name='cuCountyTwentyRoadSituations[${index}].site' class='input_none isEdit'
 										   value='${road.site}'/>
 								</td>
 									<%--自然保护区路段长度--%>
-								<td class='bg-white'>
+								<td>
 									<input name='cuCountyTwentyRoadSituations[${index}].length' class='input_none decimal isEdit'
 										   value='${road.length}'/>
 									<%--备注--%>
