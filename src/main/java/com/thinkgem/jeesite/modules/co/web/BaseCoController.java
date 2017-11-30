@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 
 public abstract class BaseCoController extends BaseController {
     @ModelAttribute
-    public void tableName(Model model) {
+    public void getTableName(Model model) {
         String name = this.getClass().getName();
-        model.addAttribute("tableName", "co" + name.split(".web.Co")[1].split("Controller")[0]);
+        name = name.replaceFirst("^.*\\.web\\.Co(.*)Controller$", "co$1");
+        model.addAttribute("tableName", name);
     }
 }
