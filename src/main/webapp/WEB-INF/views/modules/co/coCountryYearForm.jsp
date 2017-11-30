@@ -44,7 +44,7 @@
 	<div class="control-group" style="float: left">
 		<label class="control-label">村名  <font color="red">*</font>:</label>
 		<div class="controls">
-			<sys:treeselect id="area" name="area.id" value="${coCountryYear.area.id}" labelName="area.name" labelValue="${coCountryYear.area.name}"
+			<sys:treeselect id="area" name="area.id" value="${countryId}" labelName="area.name" labelValue="${coCountryYear.area.name}"
 							title="上级行政区划" url="/sys/area/treeData" extId="${area.id}" cssClass="" allowClear="true" />
 		</div>
 	</div>
