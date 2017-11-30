@@ -59,8 +59,8 @@
 				<shiro:hasPermission name="co:coCountryYear:edit"><td>
     				<a href="${ctx}/co/coCountryYear/form?id=${coCountryYear.id}">修改</a>
 					<a href="${ctx}/co/coCountryYear/delete?id=${coCountryYear.id}" onclick="return confirmx('确认要删除该村和年表吗？', this.href)">删除</a>
-					<%--<a href="${ctx}/record/countryBasic/exportDoc?countryId=${coCountryYear.area.id}&years=${coCountryYear.years}">导出doc</a>--%>
-					<a href="${ctx}/record/countryBasic/exportDoc1?countryId=${coCountryYear.area.id}&coId=${coCountryYear.id}&years=${coCountryYear.years}&countryName=${coCountryYear.area.name}">行政村档案归档清单</a>
+					<%--<a href="${ctx}/record/countryBasic/exportDoc?countryId=${countryId}&years=${coCountryYear.years}">导出doc</a>--%>
+					<a href="${ctx}/record/countryBasic/exportDoc1?countryId=${countryId}&coId=${coCountryYear.id}&years=${coCountryYear.years}&countryName=${coCountryYear.area.name}">行政村档案归档清单</a>
 				</td></shiro:hasPermission>
 			</tr>
 		</c:forEach>

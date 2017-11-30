@@ -88,7 +88,7 @@ public class CoCultureSituationController extends BaseCoController {
 				comain.setCoCultureSituationList(coCultureSituationList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coCultureSituation", coCultureSituation);

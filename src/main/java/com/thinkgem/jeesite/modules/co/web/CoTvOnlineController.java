@@ -88,7 +88,7 @@ public class CoTvOnlineController extends BaseCoController {
 				comain.setCoTvOnlineList(coTvOnlinekList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coTvOnline", coTvOnline);

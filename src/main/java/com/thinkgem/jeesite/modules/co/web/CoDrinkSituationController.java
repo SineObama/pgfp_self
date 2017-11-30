@@ -84,7 +84,7 @@ public class CoDrinkSituationController extends BaseCoController {
 				comain.setCoDrinkSituationList(coDrinkSituationList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coDrinkSituation", coDrinkSituation);

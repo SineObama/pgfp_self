@@ -88,7 +88,7 @@ public class CoSafeDrinkController extends BaseCoController {
 				comain.setCoSafeDrinkList(coSafeDrinkList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coSafeDrink", coSafeDrink);

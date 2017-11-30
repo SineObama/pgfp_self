@@ -124,17 +124,17 @@
     <%@ include file="/WEB-INF/views/include/coNav.jsp"%>
     <div id="tab-15" class="content-detail">
         <c:choose>
-        <c:when test="${empty comain.coId}">
+        <c:when test="${empty coMain.coId}">
             <script>
                 alert("请先填写村名和年度！");
                 window.history.back(-1);
             </script>
         </c:when>
         <c:otherwise>
-        <form:form id="inputForm" modelAttribute="comain" action="${ctx}/co/coLaborSituation/save" method="post"
+        <form:form id="inputForm" modelAttribute="coMain" action="${ctx}/co/coLaborSituation/save" method="post"
                    class="form-horizontal">
         <sys:message content="${message}"/>
-        <form:hidden path="id" value="${comain.id}"/>
+        <form:hidden path="id" value="${coMain.id}"/>
         <form:hidden path="coId"/>
         <h2 class="table-title"><input type="text" value="${countryName}" readonly/>无劳动能力或主要劳动力长期外出务工贫困户情况表
         </h2>
@@ -147,8 +147,8 @@
                                 <label class="control-label" style="height: 40px;line-height: 36px;">填报单位 <font color="red">*</font>:</label>
 
                                 <div class="controls">
-                                    <sys:treeselect id="area" name="area.id" value="${comain.area.id}"
-                                                    labelName="area.name" labelValue="${comain.area.name}"
+                                    <sys:treeselect id="area" name="area.id" value="${coMain.area.id}"
+                                                    labelName="area.name" labelValue="${coMain.area.name}"
                                                     title="上级行政区划" url="/sys/area/treeData" extId="${area.id}"
                                                     cssClass="" allowClear="true"/>
                                 </div>
@@ -156,7 +156,7 @@
                         </span>
 						<span>填报时间：<input name="fillDate" id="fillDate" type="text" maxlength="20"
                                           class="input-medium Wdate required"
-                                          value="<fmt:formatDate value="${comain.fillDate}" pattern="yyyy-MM-dd"/>"
+                                          value="<fmt:formatDate value="${coMain.fillDate}" pattern="yyyy-MM-dd"/>"
                                           onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});"/></span>
     </h3>
     <table>
@@ -182,8 +182,8 @@
             <td>务工人数</td>
             <td style="min-width: 200px!important;">务工地</td>
         </tr>
-        <c:if test="${comain.coLaborSituationList != null && !comain.coLaborSituationList.isEmpty()}">
-        <c:forEach items="${comain.coLaborSituationList}" var="coLaborSituation" varStatus="status">
+        <c:if test="${coMain.coLaborSituationList != null && !coMain.coLaborSituationList.isEmpty()}">
+        <c:forEach items="${coMain.coLaborSituationList}" var="coLaborSituation" varStatus="status">
         <tr>
             <td class="bg-white">
                 <input type="hidden" name="coLaborSituationList[${status.index}].id"

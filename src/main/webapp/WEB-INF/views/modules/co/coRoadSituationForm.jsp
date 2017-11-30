@@ -124,17 +124,17 @@
 	<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
 	<div id="tab-15" class="content-detail">
 		<c:choose>
-			<c:when test="${empty comain.coId}">
+			<c:when test="${empty coMain.coId}">
 				<script>
 					alert("请先填写村名和年度！");
 					window.history.back(-1);
 				</script>
 			</c:when>
 			<c:otherwise>
-				<form:form id="inputForm" modelAttribute="comain" action="${ctx}/co/coRoadSituation/save" method="post"
+				<form:form id="inputForm" modelAttribute="coMain" action="${ctx}/co/coRoadSituation/save" method="post"
 						   class="form-horizontal">
 					<sys:message content="${message}"/>
-					<form:hidden path="id" value="${comain.id}"/>
+					<form:hidden path="id" value="${coMain.id}"/>
 					<form:hidden path="coId"/>
 					<h2 class="table-title"><input type="text" value="${countryName}" readonly/>通硬化路情况表
 					</h2>
@@ -142,7 +142,7 @@
 					<h3 class="table-subtitle">
 						<span>填报单位：<input type="text" value="平桂" readonly/>县（市丶区）交通运输局（盖章）</span>
 						<span>填报时间：<input name="fillDate" id="fillDate" type="text"  maxlength="20" class="input-medium Wdate required"
-										  value="<fmt:formatDate value="${comain.fillDate}" pattern="yyyy-MM-dd"/>"
+										  value="<fmt:formatDate value="${coMain.fillDate}" pattern="yyyy-MM-dd"/>"
 										  onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});"/></span>
 					</h3>
 					<table>
@@ -168,8 +168,8 @@
 							<td>地点</td>
 							<td>长度</td>
 						</tr>
-						<c:if test="${comain.coRoadSituationList != null && !comain.coRoadSituationList.isEmpty()}">
-						<c:forEach items="${comain.coRoadSituationList}" var="coRoadSituation" varStatus="status">
+						<c:if test="${coMain.coRoadSituationList != null && !coMain.coRoadSituationList.isEmpty()}">
+						<c:forEach items="${coMain.coRoadSituationList}" var="coRoadSituation" varStatus="status">
 						<tr>
 							<td class="bg-white">
 								<input type="hidden" name="coRoadSituationList[${status.index}].id"

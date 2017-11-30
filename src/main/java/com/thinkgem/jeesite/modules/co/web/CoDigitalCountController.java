@@ -87,7 +87,7 @@ public class CoDigitalCountController extends BaseCoController {
 			comain.setCoDigitalCountList(coDigitalCountList);
 		}
 	}
-	model.addAttribute("comain",comain);
+	model.addAttribute("coMain",comain);
 	model.addAttribute("countryName",countryName);
 	model.addAttribute("countryId",countryId);
 	model.addAttribute("coDigitalCount", coDigitalCount);
