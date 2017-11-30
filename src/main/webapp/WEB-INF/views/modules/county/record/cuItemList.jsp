@@ -193,7 +193,7 @@
         </a>
     </li>
     <%--28--%>
-    <li id="OfficeBulletinBoard/">
+    <li id="OfficeBulletinBoard">
         <a href="${ctx}/record/cuCountyOfficeBulletinBoard/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=28">
             行政村办公场所宣传栏情况
         </a>
