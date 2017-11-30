@@ -84,7 +84,7 @@ public class CoLaborOutController extends BaseController {
 				comain.setCoLaborOutList(coLaborOutList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("coLaborOut", coLaborOut);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);

@@ -88,7 +88,7 @@ public class CoIncidenceOfPovertyController extends BaseController {
 				comain.setCoIncidenceOfPovertyList(coIncidenceOfPovertyList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coIncidenceOfPoverty", coIncidenceOfPoverty);

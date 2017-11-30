@@ -104,7 +104,7 @@ public class CoNetworkController extends BaseController {
 				comain.setCoNetworkList(coNetworkList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countyName",countyName);
 		model.addAttribute("countryId",countryId);

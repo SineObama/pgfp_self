@@ -88,7 +88,7 @@ public class CoTwentyRoadController extends BaseController {
 				comain.setCoTwentyRoadList(coTwentyRoadList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coTwentyRoad", coTwentyRoad);

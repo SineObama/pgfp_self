@@ -88,7 +88,7 @@ public class CoInsuranceNameListController extends BaseController {
 				comain.setCoInsuranceNameLists(coInsuranceNameLists);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coInsuranceNameList", coInsuranceNameList);

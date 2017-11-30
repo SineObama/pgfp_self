@@ -88,7 +88,7 @@ public class CoIllTreatmentController extends BaseController {
 				comain.setCoIllTreatmentList(coIllTreatmentList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countryId",countryId);
 		model.addAttribute("coIllTreatment", coIllTreatment);

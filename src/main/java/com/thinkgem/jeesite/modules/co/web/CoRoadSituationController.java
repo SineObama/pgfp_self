@@ -105,7 +105,7 @@ public class CoRoadSituationController extends BaseController {
 				comain.setCoRoadSituationList(coRoadSituationList);
 			}
 		}
-		model.addAttribute("comain",comain);
+		model.addAttribute("coMain",comain);
 		model.addAttribute("countryName",countryName);
 		model.addAttribute("countyName",countyName);
 		model.addAttribute("countryId",countryId);
