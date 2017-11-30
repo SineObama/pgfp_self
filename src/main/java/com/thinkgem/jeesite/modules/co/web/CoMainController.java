@@ -29,7 +29,7 @@ import com.thinkgem.jeesite.modules.co.service.CoMainService;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coMain")
-public class CoMainController extends BaseController {
+public class CoMainController extends BaseCoController {
 
 	@Autowired
 	private CoMainService coMainService;

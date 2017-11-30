@@ -37,12 +37,6 @@
 	</ul><br/>
 <div class="content tabs f-clear">
 	<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
-	<script type="text/javascript">
-        $(function () {
-            $("#"+"coCountryYear"+"Nav").addClass("active")
-            $("#coCountryYearNav a").removeAttr("href")
-        })
-	</script>
 	<div id="tab-1" class="content-detail">
 	<form:form id="inputForm" modelAttribute="coCountryYear" action="${ctx}/co/coCountryYear/save" method="post" class="form-horizontal">
 		<form:hidden path="id"/>

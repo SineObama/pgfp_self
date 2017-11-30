@@ -35,7 +35,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coLaborOut")
-public class CoLaborOutController extends BaseController {
+public class CoLaborOutController extends BaseCoController {
 
 	@Autowired
 	private CoLaborOutService coLaborOutService;

@@ -101,12 +101,6 @@
 
 <div class="content tabs f-clear">
 	<%@ include file="/WEB-INF/views/include/coNav.jsp"%>
-	<script type="text/javascript">
-		$(function () {
-            $("#coAllowancesNav").addClass("active")
-            $("#coAllowancesNav a").removeAttr("href")
-        })
-	</script>
 	<div id="tab-1" class="content-detail">
 		<c:choose>
 		<c:when test="${empty coMain.coId}">

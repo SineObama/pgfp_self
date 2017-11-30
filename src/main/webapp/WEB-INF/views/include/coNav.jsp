@@ -29,3 +29,10 @@
     <li id="coDigitalCountNav"><a href="${ctx}/co/coDigitalCount/form?coId=${not empty coMain ? coMain.coId : coCountryYear.id}&countryId=${countryId}">未有数码设备名单</a></li>
     <li id="coIncidenceOfPovertyNav"><a href="${ctx}/co/coIncidenceOfPoverty/form?coId=${not empty coMain ? coMain.coId : coCountryYear.id}&countryId=${countryId}">贫困发生率统计表</a></li>
 </ul>
+
+<script type="text/javascript">
+    $(function () {
+        $("#"+"${tableName}"+"Nav").addClass("active")
+        $("#"+"${tableName}"+"Nav a").removeAttr("href")
+    })
+</script>
