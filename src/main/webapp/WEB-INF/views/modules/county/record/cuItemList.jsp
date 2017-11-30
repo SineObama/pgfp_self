@@ -218,33 +218,33 @@
     </li>
     <%--32--%>
     <li id="NoTelevisionInternet">
-        <a href="${ctx}/record/cuCountyNoTelevisionInternet/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=26">
+        <a href="${ctx}/record/cuCountyNoTelevisionInternet/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=32">
             未有电视机、智能手机上网名单
         </a>
     </li>
 
-        <%--33--%>
-        <li id="LowIncome">
-            <a href="${ctx}/record/cuCountyLowIncomeInfo/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=33">
-                农村低保户情况统计表
-            </a>
-        </li>
-        <%--34--%>
-        <li id="EndowmentInsurance">
-            <a href="${ctx}/record/cuCountyEndowmentInsurance/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=34">
-                养老保险参保情况统计表
-            </a>
-        </li>
-        <%--35--%>
-        <li id="NoEndowmentInsurance">
-            <a href="${ctx}/record/cuCountyNoEndowmentInsurance/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=35">
-                养老保险未参保人员名单
-            </a>
-        </li>
-        <%--36--%>
-        <li id="PovertyIncidence">
-            <a href="${ctx}/record/cuCountyPovertyIncidence/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=36">
-                县贫困发生率统计表
-            </a>
-        </li>
+    <%--33--%>
+    <li id="LowIncome">
+        <a href="${ctx}/record/cuCountyLowIncomeInfo/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=33">
+            农村低保户情况统计表
+        </a>
+    </li>
+    <%--34--%>
+    <li id="EndowmentInsurance">
+        <a href="${ctx}/record/cuCountyEndowmentInsurance/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=34">
+            养老保险参保情况统计表
+        </a>
+    </li>
+    <%--35--%>
+    <li id="NoEndowmentInsurance">
+        <a href="${ctx}/record/cuCountyNoEndowmentInsurance/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=35">
+            养老保险未参保人员名单
+        </a>
+    </li>
+    <%--36--%>
+    <li id="PovertyIncidence">
+        <a href="${ctx}/record/cuCountyPovertyIncidence/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=36">
+            县贫困发生率统计表
+        </a>
+    </li>
 </ul>
