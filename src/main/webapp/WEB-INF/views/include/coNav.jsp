@@ -31,8 +31,9 @@
 </ul>
 
 <script type="text/javascript">
+    // 激活与格式转化
     $(function () {
         $("#"+"${tableName}"+"Nav").addClass("active")
-        $("#"+"${tableName}"+"Nav a").removeAttr("href")
+        $("#"+"${tableName}"+"Nav").text($("#"+"${tableName}"+"Nav a").text())
     })
 </script>
