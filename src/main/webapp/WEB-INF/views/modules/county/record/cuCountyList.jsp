@@ -53,7 +53,8 @@
 				<td><a href="${ctx}/record/cuCountySpecialtyIndustry/form?cuMainId=${county.id}&year=${county.year}&type=1">${county.year}</a></td>
 				<shiro:hasPermission name="record:cuMain:view">
 					<td>
-    				    <a href="${ctx}/record/cuCountySpecialtyIndustry/form?cuMainId=${county.id}&year=${county.year}&type=1">修改</a>
+						<a href="${ctx}/county/document/export?cuMainId=${county.id}">导出档案</a>
+						<a href="${ctx}/record/cuCountySpecialtyIndustry/form?cuMainId=${county.id}&year=${county.year}&type=1">修改</a>
 						<a href="${ctx}record/cuMain/delete?id=${county.id}" onclick="return confirmx('确认要删除该年度档案吗？', this.href)">删除</a>
 					</td>
 				</shiro:hasPermission>

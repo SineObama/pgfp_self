@@ -29,11 +29,13 @@
             });
 
             $('.btnEx').click(function () {
-                top.$.jBox.confirm("确认要导出数据吗？", "系统提示", function (v, h, f) {
-                    <%--console.log(${county});--%>
+
+                top.$.jBox.confirm("确认要导出数据吗？", "系统提示", function (v) {
+                    var cuTable = null;
                     if (v == "ok") {
-                        $("#inputForm").attr("action", "${ctx}/county/record/countyIncapabilityOrWorkout/export");
-                        $("#inputForm").submit();
+                        <%--$("#inputForm").attr("action", "${ctx}/county/record/countyIncapabilityOrWorkout/export");--%>
+                        <%--$("#inputForm").submit();--%>
+                        window.location.href = "${ctx}/county/record/countyIncapabilityOrWorkout/export?type=${cuTable.type}&cuMainId=${cuTable.cuMainId}";
                     }
                 });
             });
