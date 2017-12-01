@@ -13,86 +13,105 @@
     <link rel="stylesheet" href="${ctxStatic}\pgfp\css\countyExport.css"/>
     <script type="text/javascript">
         $(document).ready(function () {
-            /*checkbox回显*/
-            $('input:checkbox').each(function () {
-                if ($(this).val() == 1) {
-                    $(this).attr('checked', true);
-                } else {
-                    $(this).attr('checked', false);
-                }
-            });
-            /**********************************  设置checkbox单选  ***********************************************/
+                /*checkbox回显*/
+                $('input:checkbox').each(function () {
+                    if ($(this).val() == 1) {
+                        $(this).attr('checked', true);
+                    } else {
+                        $(this).attr('checked', false);
+                    }
+                    isEdit($(this));
+                });
+
+                function isEdit(v) {
+                    if(v.parents('tr').find(".incapabilityHouse").attr("checked")  == "checked"){
+                        v.parents('tr').find(".isEdit").each(function () {
+                            $(this).attr("disabled", true);
+                            $(this).parent('td').removeAttr("class");
+                            $(this).val("")
+                        });
+                    }else{
+                        v.parents('tr').find(".isEdit").each(function () {
+                            $(this).attr("disabled", false);
+                            $(this).parent('td').attr('class', "bg-white");
+                        });
+                    }
+                };
+
+                /**********************************  设置checkbox单选  ***********************************************/
 
 
-            //绑定点击的checkbox
-            $("#accpitem").delegate('input:checkbox', 'click', function () {
-                var check = $(this);  //记录点击checkbox位置
-                var state = check.attr("checked");  //点击后的checkbox状态（点击后取反）
-                var array = check.parents('tr').find("input:checkbox");  //获取点击位置所在的tr里的所有checkbox
-                var className = check.attr("class");  //保存className
+                //绑定点击的checkbox
+                $("#accpitem").delegate('input:checkbox', 'click', function () {
+                    var check = $(this);  //记录点击checkbox位置
+                    var state = check.attr("checked");  //点击后的checkbox状态（点击后取反）
+                    var array = check.parents('tr').find("input:checkbox");  //获取点击位置所在的tr里的所有checkbox
+                    var className = check.attr("class");//保存className
 
-                //判断是否是第一次点击
-                /*第一次点击时有一个checkbox状态先会取反，这时两个checkbox状态不相同*/
-                if(array[0].checked == array[1].checked){
-                    //循环list
-                    for (var i = 0; i < array.length; i++) {
-                        //每一个checkbox都取反
-                        array[i].checked = !array[i].checked;
-                        //根据取反后的状态赋值（true:1;false:""）
-                        if (array[i].checked) {
-                            array[i].value = "1"
-                        } else {
-                            array[i].value = "";
+                    //判断是否是第一次点击
+                    /*第一次点击时有一个checkbox状态先会取反，这时两个checkbox状态不相同*/
+                    if (array[0].checked == array[1].checked) {
+                        //循环list
+                        for (var i = 0; i < array.length; i++) {
+                            //每一个checkbox都取反
+                            array[i].checked = !array[i].checked;
+                            //根据取反后的状态赋值（true:1;false:""）
+                            if (array[i].checked) {
+                                array[i].value = "1"
+                            } else {
+                                array[i].value = "";
+                            }
                         }
                     }
-                }
-                //修改点击的checkbox状态，同时赋值
-                if (state == "checked") {
-                    check.attr('checked', true);
-                    check.val("1");
-                    //如果点的的checkbox的className包含“incapabilityHouse”，
-                    // 清空className为labourNumber、labourAdress的数据
-                    if(className.indexOf("incapabilityHouse")!= -1){
-                        check.parents('tr').find(".labourNumber").val("");
-                        check.parents('tr').find(".labourAdress").val("");
-                    }
-                } else {
-                    check.attr('checked', false);
-                    check.val("");
-                }
-            });
-
-
-            $("#inputForm").validate({
-                submitHandler: function (form) {
-                    loading('正在提交，请稍等...');
-                    form.submit();
-                },
-                errorContainer: "#messageBox",
-                errorPlacement: function (error, element) {
-                    $("#messageBox").text("输入有误，请先更正。");
-                    if (element.is(":checkbox") || element.is(":radio") || element.parent().is(".input-append")) {
-                        error.appendTo(element.parent().parent());
+                    //修改点击的checkbox状态，同时赋值
+                    if (state == "checked") {
+                        check.attr('checked', true);
+                        check.val("1");
+                        //如果点的的checkbox的className包含“incapabilityHouse”，
+                        // 清空className为labourNumber、labourAdress的数据
+                        // if(className.indexOf("incapabilityHouse")!= -1){
+                        //     check.parents('tr').find(".labourNumber").val("");
+                        //     check.parents('tr').find(".labourAdress").val("");
+                        // }
                     } else {
-                        error.insertAfter(element);
+                        check.attr('checked', false);
+                        check.val("");
                     }
-                }
-            });
+                     isEdit(check);
+                });
 
-            $('.btnEx').click(function () {
-                top.$.jBox.confirm("确认要导出数据吗？", "系统提示", function (v, h, f) {
-                    <%--console.log(${county});--%>
-                    if (v == "ok") {
-                        $("#inputForm").attr("action", "${ctx}/county/record/countyIncapabilityOrWorkout/export");
-                        $("#inputForm").submit();
+
+                $("#inputForm").validate({
+                    submitHandler: function (form) {
+                        loading('正在提交，请稍等...');
+                        form.submit();
+                    },
+                    errorContainer: "#messageBox",
+                    errorPlacement: function (error, element) {
+                        $("#messageBox").text("输入有误，请先更正。");
+                        if (element.is(":checkbox") || element.is(":radio") || element.parent().is(".input-append")) {
+                            error.appendTo(element.parent().parent());
+                        } else {
+                            error.insertAfter(element);
+                        }
                     }
                 });
-            });
 
-            $(function () {
-                $(".content-nav #labour2").attr("class", "active");
-            });
-        })
+                $('.btnEx').click(function () {
+                    top.$.jBox.confirm("确认要导出数据吗？", "系统提示", function (v, h, f) {
+                        <%--console.log(${county});--%>
+                        if (v == "ok") {
+                            $("#inputForm").attr("action", "${ctx}/county/record/countyIncapabilityOrWorkout/export");
+                            $("#inputForm").submit();
+                        }
+                    });
+                });
+
+                $(function () {
+                    $(".content-nav #labour2").attr("class", "active");
+                });
+            }
+        )
     </script>
 </head>
 <body>
@@ -194,22 +213,22 @@
                                            value="${house.incapabilityOrWorkoutNumber}" maxlength="3"/>
                                 </td>
                                 <td class="bg-white">
-                                    <input type="checkbox" class="incapabilityHouse a"
+                                    <input type="checkbox" class="incapabilityHouse"
                                            name="cuHouseIncapabilityOrWorkouts[${status.index}].incapabilityHouse"
                                            value="${house.incapabilityHouse}"/>
                                 </td>
                                 <td class="bg-white">
-                                    <input type="checkbox"
+                                    <input type="checkbox" class="workoutHouse"
                                            name="cuHouseIncapabilityOrWorkouts[${status.index}].workoutHouse"
                                            value="${house.workoutHouse}"/>
                                 </td>
                                 <td class="bg-white">
-                                    <input class="labourNumber td-input int"
+                                    <input class="labourNumber td-input int isEdit"
                                            name="cuHouseIncapabilityOrWorkouts[${status.index}].labourNumber"
                                            value="${house.labourNumber}" maxlength="3"/>
                                 </td>
                                 <td class="bg-white">
-                                    <input class="labourAdress td-input"
+                                    <input class="labourAdress td-input isEdit"
                                            name="cuHouseIncapabilityOrWorkouts[${status.index}].labourAdress"
                                            value="${house.labourAdress}" maxlength="500"/>
                                 </td>
@@ -251,6 +270,7 @@
 <script>
 
     var choose;
+
     function chooseMember(area, type) {
         if (type == 1) {
             window.location.href = '${ctx}/county/record/cuHouseIncapabilityOrWorkout/form?cuMainId=${cuTable.cuMainId}&year=${cuTable.year}&type=4&department.id=' + area.id + '&department.name=' + area.name;
@@ -280,7 +300,7 @@
         $("#accpitem").delegate(".tun", 'click', function () {
             choose = $(this);
             var parentId = $("#span-1").find(".departmentId").val();
-            if(parentId == ""){
+            if (parentId == "") {
                 alert("请先选择镇！");
                 return false;
             }
@@ -293,13 +313,14 @@
 
     var index = 0;
     var renum = 0;
+
     /*添加删除一行tr方法*/
     function reflowIndex() {
         var trs = $('tbody tr');
         var trLen = trs.length;
-        for(var i = 0;i <= trLen;i++){
+        for (var i = 0; i <= trLen; i++) {
             var tr = trs[i];
-            $(tr).find("td:eq(0)").text(i+1);
+            $(tr).find("td:eq(0)").text(i + 1);
         }
     };
 
@@ -313,7 +334,7 @@
                 '</td>' +
                 '<td class="bg-white tun">' +
                 '<input type="hidden" class="tunId" name="cuHouseIncapabilityOrWorkouts[' + num + '].tun.id"/>' +
-                '<input class="td-input tunName required" readonly="true" name="cuHouseIncapabilityOrWorkouts[' +num + '].tun.name"/>' +
+                '<input class="td-input tunName required" readonly="true" name="cuHouseIncapabilityOrWorkouts[' + num + '].tun.name"/>' +
                 '</td>' +
                 ' <td class="bg-white">' +
                 '<input class="td-input incapabilityOrWorkoutName realName required" maxlength="30" name="cuHouseIncapabilityOrWorkouts[' + num + '].incapabilityOrWorkoutName"/>' +
@@ -328,10 +349,10 @@
                 '<input type="checkbox" name="cuHouseIncapabilityOrWorkouts[' + num + '].workoutHouse" value="1"/>' +
                 '</td>' +
                 ' <td class="bg-white">' +
-                '<input class="td-input labourNumber int" maxlength="3" name="cuHouseIncapabilityOrWorkouts[' + num + '].labourNumber"/>' +
+                '<input class="td-input labourNumber int isEdit" maxlength="8" name="cuHouseIncapabilityOrWorkouts[' + num + '].labourNumber"/>' +
                 '</td>' +
                 ' <td class="bg-white">' +
-                '<input class="td-input labourAdress" maxlength="500" name="cuHouseIncapabilityOrWorkouts[' + num + '].labourAdress"/>' +
+                '<input class="td-input labourAdress isEdit" maxlength="500" name="cuHouseIncapabilityOrWorkouts[' + num + '].labourAdress"/>' +
                 '</td>' +
                 ' <td class="bg-white">' +
                 '<input class="td-input remarks" name="cuHouseIncapabilityOrWorkouts[' + num + '].remarks" maxlength="500"/>' +
