@@ -9,6 +9,6 @@ public abstract class BaseCoController extends BaseController {
     public void getTableName(Model model) {
         String name = this.getClass().getName();
         name = name.replaceFirst("^.*\\.web\\.Co(.*)Controller$", "co$1");
-        model.addAttribute("tableName", name);
+//        model.addAttribute("tableName", name);
     }
 }

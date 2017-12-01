@@ -12,3 +12,4 @@
 <c:set var="ctxStatic" value="${pageContext.request.contextPath}/static"/>
 <c:set var="basePath" value="${pageContext.request.contextPath}"/>
 <c:set var="smartPgHref" value="${fns:getConfig('smartPgHref')}"/>
+<c:set var="tableName">${pageContext.request.requestURI.replaceAll("^.*/(.*)(Form|List|View).*\\.jsp$", "$1")}</c:set>
