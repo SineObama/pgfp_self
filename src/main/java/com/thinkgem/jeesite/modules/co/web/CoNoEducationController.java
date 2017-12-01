@@ -33,7 +33,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coNoEducation")
-public class CoNoEducationController extends BaseCoController {
+public class CoNoEducationController extends BaseController {
 
 	@Autowired
 	private CoNoEducationService coNoEducationService;

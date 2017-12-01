@@ -29,7 +29,7 @@ import com.thinkgem.jeesite.modules.co.service.CoIndustryService;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coIndustry")
-public class CoIndustryController extends BaseCoController {
+public class CoIndustryController extends BaseController {
 
 	@Autowired
 	private CoIndustryService coIndustryService;
