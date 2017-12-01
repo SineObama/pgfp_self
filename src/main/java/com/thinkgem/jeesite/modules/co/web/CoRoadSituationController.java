@@ -38,7 +38,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coRoadSituation")
-public class CoRoadSituationController extends BaseController {
+public class CoRoadSituationController extends BaseCoController {
 
 	@Autowired
 	private CoRoadSituationService coRoadSituationService;

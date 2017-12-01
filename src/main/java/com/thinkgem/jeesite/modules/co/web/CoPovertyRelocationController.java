@@ -36,7 +36,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coPovertyRelocation")
-public class CoPovertyRelocationController extends BaseController {
+public class CoPovertyRelocationController extends BaseCoController {
 
 	@Autowired
 	private CoPovertyRelocationService coPovertyRelocationService;

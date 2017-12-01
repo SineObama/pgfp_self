@@ -36,7 +36,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coAllowances")
-public class CoAllowancesController extends BaseController {
+public class CoAllowancesController extends BaseCoController {
 
 	@Autowired
 	private CoAllowancesService coAllowancesService;

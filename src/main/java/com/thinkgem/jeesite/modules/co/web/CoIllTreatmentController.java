@@ -35,7 +35,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coIllTreatment")
-public class CoIllTreatmentController extends BaseController {
+public class CoIllTreatmentController extends BaseCoController {
 
 	@Autowired
 	private CoIllTreatmentService coIllTreatmentService;

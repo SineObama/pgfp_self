@@ -35,7 +35,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coDigitalCount")
-public class CoDigitalCountController extends BaseController {
+public class CoDigitalCountController extends BaseCoController {
 
 	@Autowired
 	private CoDigitalCountService coDigitalCountService;

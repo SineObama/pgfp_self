@@ -35,7 +35,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "${adminPath}/co/coTvOnline")
-public class CoTvOnlineController extends BaseController {
+public class CoTvOnlineController extends BaseCoController {
 
 	@Autowired
 	private CoTvOnlineService coTvOnlineService;
