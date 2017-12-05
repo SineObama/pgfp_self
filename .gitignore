@@ -22,4 +22,4 @@
 !/src/main/webapp/WEB-INF/views/modules/**
 !/src/main/webapp/WEB-INF/views/include/*
 !/src/main/webapp/static/pgfp/css/style.css
-!/src/main/java/com/thinkgem/jeesite/modules/co/web/*
+!/src/main/java/com/thinkgem/jeesite/modules/co/**
