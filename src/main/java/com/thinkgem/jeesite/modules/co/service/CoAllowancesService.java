@@ -20,32 +20,5 @@ import com.thinkgem.jeesite.modules.co.dao.CoAllowancesDao;
  */
 @Service
 @Transactional(readOnly = true)
-public class CoAllowancesService extends CrudService<CoAllowancesDao, CoAllowances> {
-
-	public CoAllowances get(String id) {
-		return super.get(id);
-	}
-	
-	public List<CoAllowances> findList(CoAllowances coAllowances) {
-		return super.findList(coAllowances);
-	}
-	
-	public Page<CoAllowances> findPage(Page<CoAllowances> page, CoAllowances coAllowances) {
-		return super.findPage(page, coAllowances);
-	}
-	
-	@Transactional(readOnly = false)
-	public void save(CoAllowances coAllowances) {
-		super.save(coAllowances);
-	}
-	
-	@Transactional(readOnly = false)
-	public void delete(CoAllowances coAllowances) {
-		super.delete(coAllowances);
-	}
-
-	public List<CoAllowances> getByMainId(String mainId){
-		return dao.getByMainId(mainId);
-	}
-	
+public class CoAllowancesService extends BaseCoService<CoAllowancesDao, CoAllowances> {
 }

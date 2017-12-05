@@ -15,6 +15,5 @@ import java.util.List;
  * @version 2017-11-27
  */
 @MyBatisDao
-public interface CoAllowancesDao extends CrudDao<CoAllowances> {
-	public List<CoAllowances> getByMainId(String mainId);
+public interface CoAllowancesDao extends BaseCoDao<CoAllowances> {
 }
