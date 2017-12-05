@@ -51,7 +51,7 @@
 </head>
 <body>
 	<ul class="nav nav-tabs">
-		<li><a href="${ctx}/urgestudent/urgeDropOutsRecords/houseList">辍学学生劝返记录主表列表</a></li>
+		<li><a href="${ctx}/urgestudent/urgeDropOutsRecords/houseList">贫困户列表</a></li>
 		<li class="active"><a href="${ctx}/urgestudent/urgeDropOutsRecords/form?id=${card.id}">辍学学生劝返记录主表<shiro:hasPermission name="urgestudent:urgeDropOutsRecords:edit">${not empty urgeDropOutsRecords.id?'修改':'添加'}</shiro:hasPermission><shiro:lacksPermission name="urgestudent:urgeDropOutsRecords:edit">查看</shiro:lacksPermission></a></li>
 	</ul><br/>
 	<div class="header">
@@ -61,8 +61,8 @@
 	<div class="content tabs f-clear">
 		<ul class="content-nav">
 			<li class="active">贫困学生劝返情况记录</li>
-			<li><a href="${ctx}">辍学劝返工作情况说明书</a></li>
-			<li style="height:38px;"><a href="${ctx}">因失能、缓学、休学<br/>贫困户学生情况记录表</a></li>
+			<%--<li><a href="${ctx}">辍学劝返工作情况说明书</a></li>--%>
+			<li style="height:38px;"><a href="${ctx}/urgestudent/urgeDropOutCasDisability/form?id=${card.id}">因失能、缓学、休学<br/>贫困户学生情况记录表</a></li>
 		</ul>
 		<div id="tab-1" class="content-detail">
 			<div class="content-head">
@@ -78,10 +78,10 @@
 			</div>
 			<form:form id="inputForm" modelAttribute="urge" action="${ctx}/urgestudent/urgeDropOutsRecords/save" method="post" class="form-horizontal">
 				<%--<form:hidden path="id"/>--%>
-				<form:hidden path="houseId"/>
+				<%--<form:hidden path="houseId"/>--%>
 				<sys:message content="${message}"/>
 				<br/>
-				<table style="border: 0px #FFFFFF; display:none;" id="urge">
+				<table style="border: 0px #FFFFFF; display:none; width:1006px !important;" id="urge">
 					<tbody>
 					<tr class="bg-white">
 						<td colspan="7" style="text-align: right; padding-right: 10px;"  id="deleteUrge">
@@ -172,7 +172,7 @@
 				<table style="border: 0px #FFFFFF; display:none;" id="contents">
 					<tbody>
 						<tr>
-							<td class="sec-td" colspan="6">
+							<td class="sec-td" colspan="7">
 								<strong>四、劝返记录</strong>
 							</td>
 						</tr>
@@ -186,6 +186,7 @@
 							<td>
 								劝返人员电话
 							</td>
+							<td>劝返人员类型</td>
 							<td>
 								劝返时间
 							</td>
@@ -238,17 +239,27 @@
 		$("#deleteUrge").delegate("a" , "click" , function(){
 			if(confirm("确定删除本页签吗？")){
 			    var urgeId = $(".id").val();
-//			    console.log(urgeId);
-                window.location.href= ctx + "/urgestudent/urgeDropOutsRecords/delete?id=" + urgeId;
+			    if(urgeId == ''){
+                    $(".tab-1_nav li:not(.addTable)").each(function(){
+                        var liId = $(this).attr("id");
+                        if(liId == null || liId == ''){
+                            $(this).remove();
+                        }
+                    })
+					init("");
+				}else {
+                	window.location.href= ctx + "/urgestudent/urgeDropOutsRecords/delete?id=" + urgeId;
+                }
 			}
 		})
 
+		init("");
 		//TODO 初始的时候调用，主要是获取劝返次数的数据
 		function init(id){
-            $("#contents").css('display' , 'block');
-            $("#urge").css('display' , 'block');
-            $("#content-save").css('display' , 'block');
 		    if(card != null && card.urges != null){
+                $("#contents").css('display' , 'block');
+                $("#urge").css('display' , 'block');
+                $("#content-save").css('display' , 'block');
 		        var urges = card.urges;
 		        if(urges.length > 0 ){
 		            //设置当前是那一条数据
@@ -330,6 +341,7 @@
 			if(cs != null){
 			    var HTML ;
 			    for(var i = 0 , size = cs.length ; i < size ; i++){
+
 			        var TR = "<TR CLASS=\"content\">" +
 							"<TD  class=\"sec-td bg-white\">" + "<input type='hidden' name='content["+i+"].id' value='"+cs[i].id+"' class='contentId'/>" +
 							"<input type='text' name='content["+i+"].recordIdx' value='"+cs[i].recordIdx +"' class='recordIdx'/>" +
@@ -340,6 +352,10 @@
 							"<TD  class=\"sec-td bg-white\">" +
 							"<input type='text' name='content["+i+"].urgeeCadrePhone' value='"+cs[i].urgeeCadrePhone+"' class='urgeeCadrePhone phone'/>" +
 							"</TD>"+
+							"<td class=\"sec-td bg-white\">"+
+							"<input type='radio' value='1' name='content["+i+"].urgePeopleType' class='urgePeopleType' "+ (cs[i].urgePeopleType == '1' ? "checked":"")+"/>教育部门或学校人员 "+
+							"<input type='radio' value='2' name='content["+i+"].urgePeopleType' class='urgePeopleType' "+ (cs[i].urgePeopleType == '2' ? "checked":"")+"/>帮扶联系人"+
+							"</td>"+
 							"<td class=\"sec-td bg-white\">"+
 							"<input name='content["+i+"].urgeeDate' type='text'" +
 							"class='urgeeDate input-medium Wdate required'"+ "value='"+cs[i].dateString +"'"+
@@ -390,6 +406,11 @@
                     "<TD  class=\"sec-td bg-white\">" +
                     "<input type='text' name='content[0].urgeeCadrePhone' class='urgeeCadrePhone phone'/>" +
                     "</TD>"+
+
+                    "<td class=\"sec-td bg-white\">"+
+                    "<input type='radio' value='1' name='content[].urgePeopleType' class='urgePeopleType' checked/>教育部门或学校人员 "+
+                    "<input type='radio' value='2' name='content[].urgePeopleType' class='urgePeopleType'/>帮扶联系人"+
+                    "</td>"+
                     "<td class=\"sec-td bg-white\">" +
                     "<input name='content[0].urgeeDate' type='text'" +
                     "class='urgeeDate input-medium Wdate required'"+
@@ -423,6 +444,7 @@
                     $(this).children('td').children('.recordIdx').attr('name','content['+ i +'].recordIdx');
                     $(this).children('td').children('.urgeeCadreName').attr('name','content['+ i +'].urgeeCadreName');
                     $(this).children('td').children('.urgeeCadrePhone').attr('name','content['+ i +'].urgeeCadrePhone');
+                    $(this).children('td').children('.urgePeopleType').attr('name' , 'content['+i+'].urgePeopleType');
                     $(this).children('td').children('.urgeeDate').attr('name','content['+ i +'].urgeeDate');
                     $(this).children('td').children('.recordContent').attr('name','content['+ i +'].recordContent');
                     i ++ ;

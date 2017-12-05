@@ -71,7 +71,11 @@ public class CoCountryYearController extends BaseController {
 			}
 		}
 		model.addAttribute("coCountryYear", coCountryYear);
-		model.addAttribute("countryId", coCountryYear.getArea().getId());
+		if(coCountryYear.getArea() != null){
+			model.addAttribute("countryId", coCountryYear.getArea().getId());
+		}else{
+			model.addAttribute("countryId", null);
+		}
 		return "modules/co/coCountryYearForm";
 	}
 
