@@ -200,7 +200,7 @@
             <sys:message content="${message}"/>
             <form:hidden id="year" path="year"/>
             <form:hidden id="cuMainId" path="cuMainId"/>
-            <h1 style="text-align: center"><u> 平桂 </u>县(市、区）贫困人口患病救治和补助报销情况统计表</h1>
+            <h1 style="text-align: center"><u> 平桂 </u>县（市、区）适龄儿童少年接受义务教育情况统计表</h1>
             <br/><br/>
             <p>
                 <input type="hidden" name="id" value="${cuTable.id}">

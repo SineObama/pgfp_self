@@ -30,6 +30,15 @@
                 }
             });
 
+            $('.btnEx').click(function () {
+                top.$.jBox.confirm("确认要导出数据吗？", "系统提示", function (v) {
+                    var cuTable = null;
+                    if (v == "ok") {
+                        window.location.href = "${ctx}/record/cuCountyHardeningRoad/export?type=${cuTable.type}&cuMainId=${cuTable.cuMainId}";
+                    }
+                });
+            });
+
             $(function () {
                 $(".content-nav #HardeningRoad").attr("class", "active");
             });
@@ -92,7 +101,7 @@
             <input type="hidden" name="year" value="${cuTable.year}"/>
             <input type="hidden" name="type" value="${cuTable.type}"/>
             <h1 id="h1" style="text-align: center">
-                县行政村通硬化路情况表
+                平桂区行政村通硬化路情况表
             </h1>
             <br/><br/>
             <p style="margin-bottom: 5px!important;">

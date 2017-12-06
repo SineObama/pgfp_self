@@ -145,8 +145,8 @@
 						<td rowspan="2">行政村</td>
 						<td rowspan="2">自然村（屯）</td>
 						<td rowspan="2">户主姓名</td>
-						<td rowspan="2">家庭人口数</td>
-						<td rowspan="2">安置住房面积</td>
+						<td rowspan="2">家庭人口数(人)</td>
+						<td rowspan="2">安置住房面积（㎡）</td>
 						<td rowspan="2">迁入地</td>
 						<td colspan="3">集中安置户</td>
 						<td>分散安置户</td>

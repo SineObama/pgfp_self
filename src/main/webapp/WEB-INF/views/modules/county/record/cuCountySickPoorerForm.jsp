@@ -30,6 +30,15 @@
             });
 
 
+            $('.btnEx').click(function () {
+                top.$.jBox.confirm("确认要导出数据吗？", "系统提示", function (v) {
+                    var cuTable = null;
+                    if (v == "ok") {
+                        window.location.href = "${ctx}/record/cuCountySickPoorer/export?type=${cuTable.type}&cuMainId=${cuTable.cuMainId}";
+                    }
+                });
+            });
+
             $(function () {
                 $(".content-nav #sick").attr("class", "active");
             });
